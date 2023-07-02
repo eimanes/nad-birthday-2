@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui' />
-    <title>Abigail Bloom</title>
+    <title>Nanad's Birthday</title>
   </head>
   <body class="light-theme">
     <div class="experience">
@@ -35,25 +35,40 @@
           <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path fill="currentColor" d="M12 21Q8.25 21 5.625 18.375Q3 15.75 3 12Q3 8.25 5.625 5.625Q8.25 3 12 3Q12.35 3 12.688 3.025Q13.025 3.05 13.35 3.1Q12.325 3.825 11.713 4.987Q11.1 6.15 11.1 7.5Q11.1 9.75 12.675 11.325Q14.25 12.9 16.5 12.9Q17.875 12.9 19.025 12.287Q20.175 11.675 20.9 10.65Q20.95 10.975 20.975 11.312Q21 11.65 21 12Q21 15.75 18.375 18.375Q15.75 21 12 21ZM12 19Q14.2 19 15.95 17.788Q17.7 16.575 18.5 14.625Q18 14.75 17.5 14.825Q17 14.9 16.5 14.9Q13.425 14.9 11.262 12.738Q9.1 10.575 9.1 7.5Q9.1 7 9.175 6.5Q9.25 6 9.375 5.5Q7.425 6.3 6.213 8.05Q5 9.8 5 12Q5 14.9 7.05 16.95Q9.1 19 12 19ZM11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Z"/></svg>
         </div>
       </div>
+
+      <div class="music-button-wrapper">
+        <div class="play-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 16 16"><path fill="currentColor" d="M5 3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V3z"/></svg>
+        </div>
+        <button class="music-toggle-button" id="playButton">
+          <div class="music-toggle-circle"></div>
+        </button>
+        <div class="stop-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 16 16"><path fill="currentColor" d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V3.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+        </div>
+      </div>
+      
+      <audio id="myAudio" src="../media/tally.mp3" preload="auto"></audio>
+      
       
       <div class="page-wrapper" asscroll>
         <section class="hero">
           <div class="hero-wrapper">
 
             <!-- Intro Stuff -->
-            <div class="intro-text">Welcome to my portfolio!</div>
+            <div class="intro-text">Hello</div>
             <div class="arrow-svg-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path fill="currentColor" d="M12 14.95q-.2 0-.375-.063-.175-.062-.325-.212L6.675 10.05q-.275-.275-.262-.688.012-.412.287-.687.275-.275.7-.275.425 0 .7.275l3.9 3.9 3.925-3.925q.275-.275.688-.263.412.013.687.288.275.275.275.7 0 .425-.275.7l-4.6 4.6q-.15.15-.325.212-.175.063-.375.063Z"/></svg>
             </div>
 
             <div class="hero-main">
-              <h1 class="hero-main-title">Abigail Bloom</h1>
-              <p class="hero-main-description">Digital Media Student | 3D Artist</p>
+              <h1 class="hero-main-title">Happiest Birthday!</h1>
+              <p class="hero-main-description">Nadia Azamiera</p>
             </div>
 
             <div class="hero-second">
-              <p class="hero-second-subheading first-sub">AbigailBloom</p>
-              <p class="hero-second-subheading second-sub">Portfolio</p>
+              <p class="hero-second-subheading first-sub">Today is</p>
+              <p class="hero-second-subheading second-sub">Your Day!</p>
             </div>
 
           </div>
@@ -68,7 +83,7 @@
 
           <div class="section-intro-wrapper">
             <h1 class="section-title">
-              <span class="section-title-text">About Me</span>
+              <span class="section-title-text">Dear you...</span>
               <div class="section-title-decoration styleOne"></div>
               <div class="section-title-decoration styleTwo"></div>
               <div class="section-title-decoration styleThree"></div>
@@ -79,8 +94,18 @@
 
           <div class="section-detail-wrapper">
             <!-- <h3 class="section-heading">Hello!</h3> -->
-            <p class="section-text">Hi there 👋! I'm a third-year digital media student from UK currently studying in Germany. My dream is to work for Disney or Pixar one day.</p>
-            <p class="section-text"> I love creating art and playing with my cats! I also like drinking bubble tea and going for hikes! Totally hippie lol ✌️. Welcome to my portfolio!</p>
+            <p class="section-text">Happy Birthday, my love!</p>
+            <p class="section-text">On this special day, I want to take the time to acknowledge how remarkable you are. Life is a tapestry of experiences, each one weaving its color into the fabric of our existence, making us who we are. You, with your strength, your tenacity, and your unwavering courage, are the epitome of resilience, woven together with threads of pure gold.</p>
+            <p class="section-text">You've come from a place of adversity, yet you've emerged more powerful than ever. You are a testament to the fact that hardship only makes us stronger. The strength that radiates from your heart is not just admirable, it's inspiring. You are the living proof that a heart, even if it has been weathered by the storm, can bloom with more love than one could ever imagine.</p>
+            <p class="section-text">From a life that’s handed you reasons to break, you've built reasons to grow and thrive. You've shown that it’s not about what happens to us, but how we respond to it that truly defines us. The universe tested you early, but instead of shrinking back, you fought with a fierceness that left everyone in awe.</p>
+            <p class="section-text">The compassion and kindness you have shown in times of crisis, the empathy that underlines your every action, is a testament to your beautiful spirit. Your resilience is not a wall, but a magnificent fortress of love and understanding that protects, but also generously welcomes others in.</p>
+            <p class="section-text">Today, I want to remind you of your worth and the extraordinary woman that you are. The dreams you've shared with me speak volumes about your vision and ambition. I have no doubt that your determination, coupled with your smartness and warmth, will bring you closer to your goals.</p>
+            <p class="section-text">Remember, your dreams are valid, and they are within your reach. You are entitled to the life you imagine, to the aspirations you hold dear. Your dreams are not only attainable but they're a destiny waiting for you to arrive.</p>
+            <p class="section-text">As we celebrate your special day, I also celebrate the strong woman that you are and the brilliant woman you are becoming. And as you blow out your candles, know this: there is an infinite amount of light within you, and I am blessed to bask in its glow.</p>
+            <p class="section-text">In the coming year, I wish for you the strength to overcome any obstacle, the wisdom to know that you are capable of anything you set your mind to, and the enduring spirit to keep pressing forward no matter what. I wish for you not just joy, but a happiness that echoes throughout every day of your life, lighting your path and leading you to your dreams.</p>
+            <p class="section-text">Most importantly, I wish for you the understanding that you are cherished, loved, and respected, not only for what you've gone through, but for who you are - a brilliant, brave, and beautiful woman.</p>
+            <p class="section-text">Happy birthday, my love. Here's to another year of love, strength, and unforgettable memories. May all your dreams come true, and may your journey always lead you to extraordinary destinations.</p>
+            <p class="section-text">With all my love, today and always.</p>
             <!-- <h3 class="section-heading">Lorem Ipsum</h3>
             <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita qui quae officiis, magni velit iste repellat consequuntur temporibus. Quasi atque officia iste beatae rerum, harum itaque accusamus. At, natus?</p> -->
             <!-- <h3 class="section-heading">Lorem Ipsum</h3>
@@ -91,29 +116,146 @@
         <div class="second-move section-margin"></div>
 
         <section class="second-section section right">
-          <div class="progress-wrapper progress-bar-wrapper-right">
-            <div class="progress-bar blue-background"></div>
-          </div>
+            <div class="progress-wrapper progress-bar-wrapper-right">
+                <div class="progress-bar blue-background"></div>
+            </div>
 
-          <div class="section-intro-wrapper blue-text blue-border">
-            <h1 class="section-title blue-text blue-border">
-              <span class="section-title-text blue-text">My Work</span>
-              <div class="section-title-decoration styleOne blue-border"></div>
-              <div class="section-title-decoration styleTwo blue-border"></div>
-              <div class="section-title-decoration styleThree blue-background blue-border"></div>
-            </h1>
-            <span class="section-number blue-text">02</span>
-          </div>
-
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">Candycane Village</h3>
-            <p class="section-text">This project is in progress but it's about a super colorful village where the entire world including the people are candies. So far the story is that they are set out to explore their "space" only to realize it's a human that will try to destroy them.</p>
-            <h3 class="section-heading">Rebecca's Reddish Radishes</h3>
-            <p class="section-text">Oh what's that? Why, it's a red radish! Oop, another one! In this playful and comedy animation, Rebecca, a young farmer, decided to plant radishes for the first time, but there is a big twist!</p>
-            <h3 class="section-heading">Flora</h3>
-            <p class="section-text">A heartwarming story about a little orphan girl who tries to find her way back home.</p>
-          </div>
+            <div class="section-intro-wrapper blue-text blue-border">
+                <h1 class="section-title blue-text blue-border">
+                    <span class="section-title-text blue-text">Memories</span>
+                    <div class="section-title-decoration styleOne blue-border"></div>
+                    <div class="section-title-decoration styleTwo blue-border"></div>
+                    <div class="section-title-decoration styleThree blue-background blue-border"></div>
+                </h1>
+                <span class="section-number blue-text">02</span>
+            </div>
+              
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="../images/1.jpeg" alt="Image 1">
+                </div>
+                <div class="image-item">
+                    <img src="../images/2.jpg" alt="Image 2">
+                </div>
+                <div class="image-item">
+                    <img src="../images/3.jpg" alt="Image 3">
+                </div>
+                <div class="image-item">
+                    <img src="../images/4.jpg" alt="Image 4">
+                </div>
+                <div class="image-item">
+                    <img src="../images/5.jpg" alt="Image 5">
+                </div>
+                <div class="image-item">
+                    <img src="../images/6.jpg" alt="Image 6">
+                </div>
+                <div class="image-item">
+                    <img src="../images/7.jpg" alt="Image 7">
+                </div>
+                <div class="image-item">
+                    <img src="../images/8.jpg" alt="Image 8">
+                </div>
+                <div class="image-item">
+                    <img src="../images/9.jpg" alt="Image 9">
+                </div>
+                <div class="image-item">
+                    <img src="../images/10.jpg" alt="Image 10">
+                </div>
+                <div class="image-item">
+                    <img src="../images/11.jpg" alt="Image 11">
+                </div>
+                <div class="image-item">
+                    <img src="../images/12.jpg" alt="Image 12">
+                </div>
+                <div class="image-item">
+                    <img src="../images/13.jpg" alt="Image 13">
+                </div>
+                <div class="image-item">
+                    <img src="../images/14.jpg" alt="Image 14">
+                </div>
+                <div class="image-item">
+                    <img src="../images/15.jpg" alt="Image 15">
+                </div>
+                <div class="image-item">
+                    <img src="../images/16.jpg" alt="Image 16">
+                </div>
+                <div class="image-item">
+                    <img src="../images/17.jpg" alt="Image 17">
+                </div>
+                <div class="image-item">
+                    <img src="../images/18.jpg" alt="Image 18">
+                </div>
+                <div class="image-item">
+                    <img src="../images/19.jpg" alt="Image 19">
+                </div>
+                <div class="image-item">
+                    <img src="../images/20.jpg" alt="Image 20">
+                </div>
+                <div class="image-item">
+                    <img src="../images/21.jpg" alt="Image 21">
+                </div>
+                <div class="image-item">
+                    <img src="../images/22.jpg" alt="Image 22">
+                </div>
+                <div class="image-item">
+                    <img src="../images/23.jpg" alt="Image 23">
+                </div>
+                <div class="image-item">
+                    <img src="../images/24.jpg" alt="Image 24">
+                </div>
+                <div class="image-item">
+                    <img src="../images/25.jpg" alt="Image 25">
+                </div>
+                <div class="image-item">
+                    <img src="../images/26.jpg" alt="Image 26">
+                </div>
+                <div class="image-item">
+                    <img src="../images/27.jpg" alt="Image 27">
+                </div>
+                <div class="image-item">
+                    <img src="../images/28.jpg" alt="Image 28">
+                </div>
+                <div class="image-item">
+                    <img src="../images/29.jpg" alt="Image 29">
+                </div>
+                <div class="image-item">
+                    <img src="../images/30.jpg" alt="Image 30">
+                </div>
+                <div class="image-item">
+                    <img src="../images/31.jpg" alt="Image 31">
+                </div>
+                <div class="image-item">
+                    <img src="../images/32.jpg" alt="Image 32">
+                </div>
+                <div class="image-item">
+                    <img src="../images/33.jpg" alt="Image 33">
+                </div>
+                <div class="image-item">
+                    <img src="../images/34.jpg" alt="Image 34">
+                </div>
+                <div class="image-item">
+                    <img src="../images/35.jpg" alt="Image 35">
+                </div>
+                <div class="image-item">
+                    <img src="../images/36.jpg" alt="Image 36">
+                </div>
+                <div class="image-item">
+                    <img src="../images/37.jpg" alt="Image 37">
+                </div>
+                <div class="image-item">
+                  <img src="../images/38.jpg" alt="Image 38">
+              </div>
+                <div class="image-item">
+                  <video controls>
+                      <source src="../images/1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>              
+            </div>
         </section>
+
+          
+          
 
         <div class="third-move section-margin"></div>
 
@@ -124,7 +266,7 @@
 
           <div class="section-intro-wrapper green-text green-border">
             <h1 class="section-title green-text green-border">
-              <span class="section-title-text green-text">Contact Me</span>
+              <span class="section-title-text green-text">Gift</span>
               <div class="section-title-decoration styleOne green-border"></div>
               <div class="section-title-decoration styleTwo green-border"></div>
               <div class="section-title-decoration styleThree green-background green-border"></div>
@@ -133,12 +275,22 @@
           </div>
 
           <div class="section-detail-wrapper">
-            <h3 class="section-heading">ArtStation</h3>
-            <p class="section-text">I post all my work here. I don't want to link it yet because I want to sort it out a little bit!</p>
-            <h3 class="section-heading">Instagram</h3>
-            <p class="section-text">Check out my personal instagram for travel pics and food and stuff.</p>
-            <h3 class="section-heading">LinkedIn</h3>
-            <p class="section-text">Career updates and so much more!</p>
+            <h3 class="section-heading">Here is your Present!!</h3>
+            <p class="section-text">It's not much but will be useful to you :*</p>
+            <p class="section-text">Tekan bawah tu kalau nak!!</p>
+            
+            <audio id="click-sound" src="../media/click.wav" preload="auto"></audio>
+            <a href="https://sppay.shopee.com.my/angbao/96LZc7OnqFX2e7maRvo10NPAAaHNn8av" class="button-link">
+              <button type="button" class="stylish-button" onclick="playSound()">Claim here!</button>
+            </a>
+            
+            <script>
+              function playSound() {
+                var sound = document.getElementById("click-sound");
+                sound.play();
+              }
+            </script>
+            
           </div>
         </section>
 
