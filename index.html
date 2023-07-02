@@ -48,7 +48,7 @@
         </div>
       </div>
       
-      <audio id="myAudio" src="../media/tally.mp3" preload="auto"></audio>
+      <audio id="myAudio" src="https://asset.cloudinary.com/dfe0zr9sa/867c53c8274169d9e2410c30756e009c" preload="auto"></audio>
       
       
       <div class="page-wrapper" asscroll>
@@ -130,129 +130,47 @@
                 <span class="section-number blue-text">02</span>
             </div>
               
-            <div class="image-grid">
-                <div class="image-item">
-                    <img src="../images/1.jpg" alt="Image 1">
-                </div>
-                <div class="image-item">
-                    <img src="../images/2.jpg" alt="Image 2">
-                </div>
-                <div class="image-item">
-                    <img src="../images/3.jpg" alt="Image 3">
-                </div>
-                <div class="image-item">
-                    <img src="../images/4.jpg" alt="Image 4">
-                </div>
-                <div class="image-item">
-                    <img src="../images/5.jpg" alt="Image 5">
-                </div>
-                <div class="image-item">
-                    <img src="../images/6.jpg" alt="Image 6">
-                </div>
-                <div class="image-item">
-                    <img src="../images/7.jpg" alt="Image 7">
-                </div>
-                <div class="image-item">
-                    <img src="../images/8.jpg" alt="Image 8">
-                </div>
-                <div class="image-item">
-                    <img src="../images/9.jpg" alt="Image 9">
-                </div>
-                <div class="image-item">
-                    <img src="../images/10.jpg" alt="Image 10">
-                </div>
-                <div class="image-item">
-                    <img src="../images/11.jpg" alt="Image 11">
-                </div>
-                <div class="image-item">
-                    <img src="../images/12.jpg" alt="Image 12">
-                </div>
-                <div class="image-item">
-                    <img src="../images/13.jpg" alt="Image 13">
-                </div>
-                <div class="image-item">
-                    <img src="../images/14.jpg" alt="Image 14">
-                </div>
-                <div class="image-item">
-                    <img src="../images/15.jpg" alt="Image 15">
-                </div>
-                <div class="image-item">
-                    <img src="../images/16.jpg" alt="Image 16">
-                </div>
-                <div class="image-item">
-                    <img src="../images/17.jpg" alt="Image 17">
-                </div>
-                <div class="image-item">
-                    <img src="../images/18.jpg" alt="Image 18">
-                </div>
-                <div class="image-item">
-                    <img src="../images/19.jpg" alt="Image 19">
-                </div>
-                <div class="image-item">
-                    <img src="../images/20.jpg" alt="Image 20">
-                </div>
-                <div class="image-item">
-                    <img src="../images/21.jpg" alt="Image 21">
-                </div>
-                <div class="image-item">
-                    <img src="../images/22.jpg" alt="Image 22">
-                </div>
-                <div class="image-item">
-                    <img src="../images/23.jpg" alt="Image 23">
-                </div>
-                <div class="image-item">
-                    <img src="../images/24.jpg" alt="Image 24">
-                </div>
-                <div class="image-item">
-                    <img src="../images/25.jpg" alt="Image 25">
-                </div>
-                <div class="image-item">
-                    <img src="../images/26.jpg" alt="Image 26">
-                </div>
-                <div class="image-item">
-                    <img src="../images/27.jpg" alt="Image 27">
-                </div>
-                <div class="image-item">
-                    <img src="../images/28.jpg" alt="Image 28">
-                </div>
-                <div class="image-item">
-                    <img src="../images/29.jpg" alt="Image 29">
-                </div>
-                <div class="image-item">
-                    <img src="../images/30.jpg" alt="Image 30">
-                </div>
-                <div class="image-item">
-                    <img src="../images/31.jpg" alt="Image 31">
-                </div>
-                <div class="image-item">
-                    <img src="../images/32.jpg" alt="Image 32">
-                </div>
-                <div class="image-item">
-                    <img src="../images/33.jpg" alt="Image 33">
-                </div>
-                <div class="image-item">
-                    <img src="../images/34.jpg" alt="Image 34">
-                </div>
-                <div class="image-item">
-                    <img src="../images/35.jpg" alt="Image 35">
-                </div>
-                <div class="image-item">
-                    <img src="../images/36.jpg" alt="Image 36">
-                </div>
-                <div class="image-item">
-                    <img src="../images/37.jpg" alt="Image 37">
-                </div>
-                <div class="image-item">
-                  <img src="../images/38.jpg" alt="Image 38">
-              </div>
-                <div class="image-item">
-                  <video controls>
-                      <source src="../images/1.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-              </div>              
-            </div>
-        </section>
+            <div id="image-grid" class="image-grid">
+              <!-- Images and videos will be inserted here -->
+          </div>
+          
+          <script>
+              // Assuming we have a list of images and videos.
+              let files = Array.from({length: 38}, (_, i) => i + 1);
+          
+              let container = document.getElementById('image-grid');
+          
+              files.forEach(file => {
+                  let element;
+                  let src;
+          
+                  if (file.endsWith('.mp4')) {
+                      // Here, I'm assuming all videos are named like "1.mp4", "2.mp4", etc. on Cloudinary.
+                      src = `https://asset.cloudinary.com/dfe0zr9sa/ce72e426e04227fe8c1e95fcebee3add/${file}.mp4`;
+          
+                      element = document.createElement('div');
+                      element.classList.add('image-item');
+                      element.innerHTML = `
+                          <video controls>
+                              <source src="${src}" type="video/mp4">
+                              Your browser does not support the video tag.
+                          </video>
+                      `;
+                  } else {
+                      // Here, I'm assuming all images are named like "1.jpg", "2.jpg", etc. on Cloudinary.
+                      src = `https://collection.cloudinary.com/dfe0zr9sa/446988fc04c99e288977a280c7a29512/${file}.jpg`;
+          
+                      element = document.createElement('img');
+                      element.classList.add('image-item');
+                      element.src = src;
+                      element.alt = `Image ${file}`;
+                  }
+          
+                  container.appendChild(element);
+              });
+          </script>
+          
+          
 
           
           
