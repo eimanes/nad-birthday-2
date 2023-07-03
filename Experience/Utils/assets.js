@@ -7,6 +7,6 @@ export default [
     {
         name: "screen",
         type: "videoTexture",
-        path: "/textures/kda.mp4",
+        path: "https://res.cloudinary.com/dfe0zr9sa/video/upload/v1688399026/kda_f2cc41.mp4",
     },
 ];

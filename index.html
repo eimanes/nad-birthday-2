@@ -48,7 +48,7 @@
         </div>
       </div>
       
-      <audio id="myAudio" src="https://asset.cloudinary.com/dfe0zr9sa/867c53c8274169d9e2410c30756e009c" preload="auto"></audio>
+      <audio id="myAudio" src="https://res.cloudinary.com/dfe0zr9sa/video/upload/v1688320151/tally_anrbwa.mp3" preload="auto"></audio>
       
       
       <div class="page-wrapper" asscroll>
@@ -113,67 +113,82 @@
           </div>
         </section>
 
-        <div class="second-move section-margin"></div>
-
         <section class="second-section section right">
-            <div class="progress-wrapper progress-bar-wrapper-right">
-                <div class="progress-bar blue-background"></div>
-            </div>
-
-            <div class="section-intro-wrapper blue-text blue-border">
-                <h1 class="section-title blue-text blue-border">
-                    <span class="section-title-text blue-text">Memories</span>
-                    <div class="section-title-decoration styleOne blue-border"></div>
-                    <div class="section-title-decoration styleTwo blue-border"></div>
-                    <div class="section-title-decoration styleThree blue-background blue-border"></div>
-                </h1>
-                <span class="section-number blue-text">02</span>
-            </div>
-              
-            <div id="image-grid" class="image-grid">
-              <!-- Images and videos will be inserted here -->
+          <div class="progress-wrapper progress-bar-wrapper-right">
+              <div class="progress-bar blue-background"></div>
           </div>
-          
+      
+          <div class="section-intro-wrapper blue-text blue-border">
+              <h1 class="section-title blue-text blue-border">
+                  <span class="section-title-text blue-text">Memories</span>
+                  <div class="section-title-decoration styleOne blue-border"></div>
+                  <div class="section-title-decoration styleTwo blue-border"></div>
+                  <div class="section-title-decoration styleThree blue-background blue-border"></div>
+              </h1>
+              <span class="section-number blue-text">02</span>
+          </div>
+      
+          <div id="image-grid" class="image-grid">
+              <!-- Images will be inserted here -->
+          </div>
+      
           <script>
-              // Assuming we have a list of images and videos.
-              let files = Array.from({length: 38}, (_, i) => i + 1);
-          
+              // Here you can insert your list of URLs. For example:
+              let imageURLs = [
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320131/10_p8qrtk.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320131/11_nnrrjb.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320131/12_hevtgq.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320131/13_fucj2s.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321410/14_jhjhdy.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320131/1_dqsc8v.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321411/15_ssvqj1.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321411/16_zuurgi.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320133/17_gels40.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321411/18_z1a0rk.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320133/19_bbdkpu.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321412/20_hvenug.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321412/21_rhcpmv.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320135/22_a4ylup.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320135/23_obf2sp.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320134/24_dk0fmf.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320135/25_zqgqqs.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320136/26_qrx8cb.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321413/27_aadbhd.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320136/28_uvnsyp.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320136/29_hb1x4c.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320133/2_p1in8u.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320137/30_kglxam.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321414/31_g79buh.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320138/32_mnwnrf.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320138/33_lgq4he.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320138/34_hvyznm.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321415/35_ep9cde.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320139/36_uehwho.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321416/37_npypwt.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320140/38_rs4gat.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320137/3_p4xvjq.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320140/4_czecj7.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320140/5_bklzrw.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321409/6_adkmdo.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320141/7_ezynlm.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688320141/8_nkicjb.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/image/upload/v1688321410/9_mxgtbr.jpg',
+                  'https://res.cloudinary.com/dfe0zr9sa/video/upload/v1688321408/1_ngqwgr.mp4'
+              ];
+      
               let container = document.getElementById('image-grid');
-          
-              files.forEach(file => {
-                  let element;
-                  let src;
-          
-                  if (file.endsWith('.mp4')) {
-                      // Here, I'm assuming all videos are named like "1.mp4", "2.mp4", etc. on Cloudinary.
-                      src = `https://asset.cloudinary.com/dfe0zr9sa/ce72e426e04227fe8c1e95fcebee3add/${file}.mp4`;
-          
-                      element = document.createElement('div');
-                      element.classList.add('image-item');
-                      element.innerHTML = `
-                          <video controls>
-                              <source src="${src}" type="video/mp4">
-                              Your browser does not support the video tag.
-                          </video>
-                      `;
-                  } else {
-                      // Here, I'm assuming all images are named like "1.jpg", "2.jpg", etc. on Cloudinary.
-                      src = `https://collection.cloudinary.com/dfe0zr9sa/446988fc04c99e288977a280c7a29512/${file}.jpg`;
-          
-                      element = document.createElement('img');
-                      element.classList.add('image-item');
-                      element.src = src;
-                      element.alt = `Image ${file}`;
-                  }
-          
+      
+              imageURLs.forEach((url, index) => {
+                  let element = document.createElement('img');
+                  element.classList.add('image-item');
+                  element.src = url;
+                  element.alt = `Image ${index + 1}`;
+      
                   container.appendChild(element);
               });
           </script>
-          
-          
-
-          
-          
+      </section>
+      
 
         <div class="third-move section-margin"></div>
 
